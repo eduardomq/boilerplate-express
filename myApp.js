@@ -6,7 +6,10 @@ var app = express();
 console.log("Hello World");
 
 // --> 11)  Mount the body-parser middleware  here
-
+app.get("/", function(req, res) {
+   res.send('Hello Express');
+ }
+)
 
 /** 1) Meet the node console. */
 
